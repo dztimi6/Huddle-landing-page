@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: white;
+  min-height: 100vh;
+  background: url(../images/bg-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 1em auto 1.25em 1.875em;
+}
+
+.content {
+  margin: 1.875em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content-body {
+  padding: 3.15em;
+}
+
+.heading {
+  font-family: "Poppins";
+  font-weight: 600;
+  padding-right: 3.75rem;
+}
+
+.para {
+  padding: 1em 1em .5em 0;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  ;
+  color: hsl(257, 40%, 49%);
+  text-decoration: none;
+  border: none;
+  border-radius: 5em;
+  padding: 0.8em 4em;
+  margin-top: 0.8em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+
+.fa-brands {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.fa-brands:hover {
+  color: #FF00FF;
+  border-color: #FF00FF;
+}
+
+@media (max-width: 1440px) {
+  body {
+    background-size: contain;
+  }
+
+  .content-img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: contain;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+  }
+
+  .container {
+    margin: 40px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  .content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 24px 0 0 0;
+  }
+
+  .heading {
+    max-width: 520px;
+    text-align: center;
+    padding-bottom: 24px
+  }
+
+  .para {
+    text-align: center;
+    max-width: 520px;
+    padding: 0 0 24px 0;
+  }
+
+  .btn {
+    margin: 0 0 64px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    position: initial;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background: url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+  }
+
+  .heading {
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 0 24px 0;
+  }
+
+  .para {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0 0 24px 0;
+  }
+}
